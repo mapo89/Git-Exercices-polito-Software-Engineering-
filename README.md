@@ -50,3 +50,4 @@ You are a team of three developers working on same projects but leaving in diffe
 
 ##Additional Material
 [Git guide](http://git-scm.com/doc)
+[Git for windows guide](https://windows.github.com/help.html)

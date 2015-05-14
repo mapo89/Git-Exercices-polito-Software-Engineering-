@@ -47,3 +47,6 @@ Form group of three people and create a new repository. Create a src folder in w
 
 ###Scenario
 You are a team of three developers working on same projects but leaving in different cities (Torino, Milano, Roma).
+
+##Additional Material
+[Git guide](http://git-scm.com/doc)

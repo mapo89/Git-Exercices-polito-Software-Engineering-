@@ -40,3 +40,10 @@ rename?
 7. If you don’t remember, look back in the slides to see what the --stat option did on the **diff** command. Find out if this also works with the show command. How about the **log** command?
 8. Imagine you want to see a diff that summarizes all that happened between two commit identifiers. Use the 
 **diff** command, specifying two commit identifiers joined by two dots (that is, something like abc123..def456). Check the output is what you expect.
+
+##Exercise 2
+
+Form group of three people and create a new repository. Create a src folder in which you import the inventory.zip (in folder eclipse).
+
+###Scenario
+You are a team of three developers working on same projects but leaving in different cities (Torino, Milano, Roma).

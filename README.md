@@ -6,8 +6,10 @@ Tutorial for using git for Software Engineering course of Politecnico di Torino.
 3. create a new repository as expained [here](https://help.github.com/articles/create-a-repo/)
 4. download a git client ([windows](https://windows.github.com/), on linux and Mac you have it already)
 ##Exercise 1
+
 ###Scenario
 You are writing your master thesis and you don't want to keep the history of what done, in order to be able to track modifications and rollback if necessary.
+
 ###Main Task
 1. Create a new directory and change into it.
 2. Use the **init** comm and to create a Git repository in that directory.

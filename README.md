@@ -42,11 +42,65 @@ rename?
 **diff** command, specifying two commit identifiers joined by two dots (that is, something like abc123..def456). Check the output is what you expect.
 
 ##Exercise 2
+Work in the same repository of previous exercise.
+
+###Scenario
+As for exercise 1.
+
+###Main Task
+1. Run the status command. Notice how it tells you what branch you are in.
+2. Use the branch command to create a new branch.
+3. Use the checkout command to switch to it.
+4. Make a couple of commits in the branch – perhaps adding a new file and/or editing existing ones.
+5. Use the log command to see the latest commits. The two you just made should be at the top of the list.
+6. Use the checkout command to switch back to the master branch. Run log again. Notice your commits don’t show up now. Check the files also – they should have their original contents.
+7. Use the checkoutcommand to switch back to your branch. Use gitk to take a look at the commit graph; notice 
+it’s linear.
+8. Now checkout the master branch again. Use the merge command to merge your branch in to it. Look for information about it having been a fast-forward merge. Look at git log, and see that there is no merge commit. Take a look in gitk and see how the DAG is linear.
+9. Switch back to your branch. Make a couple more commits.
+10. Switch back to master. Make a commit there, which should edit a different file from the ones you touched in your branch – to be sure there is no conflict.
+11. Now merge your branch again. (Aside: you don’t need to do anything to inform Git that you only want to merge things added since your previous merge. Due to the way Git works, that kind of issue simply does not come up, unlike in early versions of Subversion).
+12. Look at git log. Notice that there is a merge commit. Also look in gitk. Notice the DAG now shows how things forked, and then were joined up again by a merge commit.
+
+###Stretch Task
+1. Once again, checkout your branch. Make a couple of commits.
+2. Return to your master branch. Make a commit there that changes the exact same line, or lines, as commits in your branch did.
+3. Now try to merge your branch. You should get a conflict.
+4. Open the file(s) that is in conflict. Search for the conflict marker. Edit the file to remove the conflict markers and resolve the conflict. 
+5. Now try to commit. Notice that Git will not allow you to do this when you still have potentially unresolved conflicts. Look at the output of status too.
+6. Use the add command to add the files that you have resolved conflicts in to the staging area. Then use commit to commit the merge commit.
+7. Take a look at git log and gitk, and make sure things are as you expected.
+8. If time allows, you may wish to...
+  - Delete everything but your .git directory, then do a checkout command, to prove to yourself that this really will restore all of you current working copy.
+  - Create a situation where one branch has changed a file, but the other branch has deleted it. What happens when you try to merge? How will you resolve it?
+  - Look at the help page for merge, and find out how you specify a custom message for the merge commit if it is automatically generated.
+  - Look at the help page for merge, and find out how to prevent Git from automatically committing the merge commit it generates, but instead give you chance to inspect it and merge it yourself.
+
+##Exercise 3
 
 Form group of three people and create a new repository. Create a src folder in which you import the inventory.zip (in folder eclipse).
 
 ###Scenario
-You are a team of three developers working on same projects but leaving in different cities (Torino, Milano, Roma).
+You are a team of 2 developers working on same projects but leaving in different cities (Torino and Milano).
+
+###Main Task
+1. First, one person in the group should create a public repository using their GitHub account.
+2. This same person should then follow the instructions from GitHub to add a remote, and then push their
+repository. Do not forget the –u flag, as suggested by GitHub!
+3. All of the other members of the group should then be added as collaborators, so they can commit to the repository also.
+4. Next, everyone else in the group should clone the repository from GitHub. Verify that the context of the repository is what is expected.
+5. One of the group members who just cloned should now make a local commit, then push it. Everyone should verify that when they pull, that commit is added to their local repository (use git log to check for it).
+6. Look at each other’s git log output. Notice how the SHA-1 is the same for a given commit across every copy of the repository. Why is this important?
+7. Two members of the group should now make a commit locally, and race to push it. To keep things simple, be sure to edit different files. What happens to the runner-up?
+8. The runner-up should now pull. As a group, look at the output of the command. Additionally, look at the 
+git log, and notice that there is a merge commit. You may also wish to view the DAG in gitk.
+9. Repeat the last two steps acouple of times, to practice. 
+
+###Stretch Task
+1. Now create a situation where two group members both edit the same line in the same file and commit it locally. Race to push.
+2. When the runner-up does a pull, they should get a merge conflict.
+3. Look as a group at the file in conflict, and resolve it.
+4. Use the add command to stage the fix, and then use commit to make the merge commit. Notice how this procedure is exactly the one you got used to when resolving conflicts in branches.
 
 ##Additional Material
 - [Git guide](http://git-scm.com/doc)

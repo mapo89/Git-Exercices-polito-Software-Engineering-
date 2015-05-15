@@ -78,15 +78,14 @@ it’s linear.
 
 ##Exercise 3
 
-Form group of three people and create a new repository. Create a src folder in which you import the inventory.zip (in folder eclipse).
+Form group of 2 people.
 
 ###Scenario
 You are a team of 2 developers working on same projects but leaving in different cities (Torino and Milano).
 
 ###Main Task
 1. First, one person in the group should create a public repository using their GitHub account.
-2. This same person should then follow the instructions from GitHub to add a remote, and then push their
-repository. Do not forget the –u flag, as suggested by GitHub!
+2. This same person should then follow the instructions from GitHub to add a remote. Copy the inventory folder of this project and push the repository. Do not forget the –u flag, as suggested by GitHub!
 3. All of the other members of the group should then be added as collaborators, so they can commit to the repository also.
 4. Next, everyone else in the group should clone the repository from GitHub. Verify that the context of the repository is what is expected.
 5. One of the group members who just cloned should now make a local commit, then push it. Everyone should verify that when they pull, that commit is added to their local repository (use git log to check for it).

@@ -4,7 +4,7 @@ Tutorial for using git for Software Engineering course of Politecnico di Torino.
 1. create your account on github
 2. set up git as explained [here](https://help.github.com/articles/set-up-git/)
 3. create a new repository as expained [here](https://help.github.com/articles/create-a-repo/)
-4. Install a git client ([windows](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Windows), [linux](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux)[Mac](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac))
+4. Install a git client ([windows](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Windows), [linux](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux), [Mac](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac))
 5. [Configure Git](http://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
 ##Exercise 1

@@ -100,6 +100,20 @@ git log, and notice that there is a merge commit. You may also wish to view the 
 3. Look as a group at the file in conflict, and resolve it.
 4. Use the add command to stage the fix, and then use commit to make the merge commit. Notice how this procedure is exactly the one you got used to when resolving conflicts in branches.
 
+##Exercise 4
+
+Work in the same group of exercise 3.
+
+###Scenario
+As exerise 3. In particular you have to focus on the testing phase by means of junit.
+
+###Main Task
+1. Clone this repository. One member of te team is responsible of Item class, while the othe of the Inventory class.
+2. Design and develop other unit tests which can be important for the two classes (you can rely on what defined in the blackbox testing exercise of previous exercise lesson). Each member work on is own and commit and push to share changes.
+3. Run the tests.
+4. The member responsible of the Inventoryclass add a method to search by description and define and runs proper tests, while the other member add the field supplier and methods necesary to manage it in the Item class and define and runs proper tests. 
+5. Try to define and develop integration tests. Work on the same class file managing conflict if they occur (each member defines a couple of methods).
+
 ##Additional Material
 - [Git guide](http://git-scm.com/doc)
 - [Git for windows guide](https://windows.github.com/help.html)

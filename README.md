@@ -112,7 +112,7 @@ As exercise 3. In particular you have to focus on the testing phase, by relying 
 2. Design and develop other unit tests which can be important for the two classes (you can rely on what defined in the blackbox testing exercise of previous exercise lesson). Each member works on his own and commit and push to share changes.
 3. Run the tests and correct the classes or the tests until all are passed.
 4. The member responsible of the Inventory class add a method to search by description and define and runs proper tests, while the other member add the field supplier and methods necessary to manage it in the Item class and define and runs proper tests. 
-5. Try to define and develop integration tests. Work on the same class (InventoryItemTest) file managing conflict if they occur (each member defines a couple of methods).
+5. Try to define and develop integration tests. Work on the same class (InventoryItemTest), managing conflicts if they occur (each member defines a couple of tests).
 
 ##Additional Material
 - [Git guide](http://git-scm.com/doc)

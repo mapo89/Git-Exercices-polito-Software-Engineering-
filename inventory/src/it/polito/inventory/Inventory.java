@@ -7,16 +7,16 @@ public class Inventory{
 	private Map<String, Item> items = new HashMap<String, Item>();
 	
 	// adds new descriptor 
-	void addItem(Item i) throws ItemAlreadyExists {
+	public void addItem(Item i) throws ItemAlreadyExists {
 		
-		if (items.putIfAbsent(i.getItemCode(), i) == null) {
+		if (items.putIfAbsent(i.getItemCode(), i) != null) {
 			throw new ItemAlreadyExists();
 		}
 		
 	}
 	
 	// returns item with given code
-    Item searchItem (String itemCode) throws ItemNotExists {
+    public Item searchItem (String itemCode) throws ItemNotExists {
 		
     	Item i = items.get(itemCode);
 		
@@ -29,7 +29,7 @@ public class Inventory{
     }
     
     // returns availability of item
-    int availabilityItem (String itemCode) throws ItemNotExists {
+    public int availabilityItem (String itemCode) throws ItemNotExists {
     	
     	Item i = items.get(itemCode);
     	
@@ -42,7 +42,7 @@ public class Inventory{
     }
     
     // subtracts 1 to availability
-    void subtractItem (String itemCode) throws ItemNotExists, ItemNotAvailable {
+    public void subtractItem (String itemCode) throws ItemNotExists, ItemNotAvailable {
 
     	Item i = items.get(itemCode);
     	
@@ -58,7 +58,7 @@ public class Inventory{
 		
     }
                                                            
-    void addQtyToItem(String itemCode, int qty_to_add) throws ItemNotExists {
+    public void addQtyToItem(String itemCode, int qty_to_add) throws ItemNotExists {
 
     	Item i = items.get(itemCode);
     	
@@ -69,8 +69,8 @@ public class Inventory{
 		i.setAvailability(i.getAvailability() + qty_to_add);
     }
     
-    void  subtractQtyToItem(String itemCode, int qty_to_add) 
-    		throws ItemNotAvailable, ItemNotExists {
+    public void  subtractQtyToItem(String itemCode, int qty_to_add) 
+    		throws ItemNotAvailable, ItemNotExists, NegativeQuantity {
 
     	Item i = items.get(itemCode);
     	
@@ -83,6 +83,9 @@ public class Inventory{
 		}
 		
 		//not check if availability goes under 0!
+		if (qty_to_add > i.getAvailability()) {
+			throw new NegativeQuantity();
+		}
 		i.setAvailability(i.getAvailability() - qty_to_add);
     }
 

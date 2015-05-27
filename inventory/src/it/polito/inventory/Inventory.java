@@ -16,9 +16,13 @@ public class Inventory{
 	}
 	
 	// returns item with given code
-    public Item searchItem (String itemCode) throws ItemNotExists {
+    public Item searchItem (String itemCode) throws ItemNotExists, BadItemCode {
 		
     	Item i = items.get(itemCode);
+    	
+    	if (itemCode.charAt(0) != 'A') {
+    		throw new BadItemCode();
+    	}
 		
     	if (i == null) {
 			throw new ItemNotExists();

@@ -1,10 +1,10 @@
 # Git-Exercices-polito-Software-Engineering-
 Tutorial for using git for Software Engineering course of Politecnico di Torino.
 ##Preliminary operations
-1. create your account on github
+1. Create your account on github
 2. Install a git client ([windows](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Windows), [linux](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux), [Mac](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac))
-2. set up git as explained [here](https://help.github.com/articles/set-up-git/)
-3. create a new repository as expained [here](https://help.github.com/articles/create-a-repo/)
+2. Set up git as explained [here](https://help.github.com/articles/set-up-git/)
+3. Create a new repository as explained [here](https://help.github.com/articles/create-a-repo/)
 
 ##Exercise 1
 

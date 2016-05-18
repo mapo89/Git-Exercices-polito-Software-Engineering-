@@ -111,7 +111,9 @@ As exercise 3. In particular you have to focus on the testing phase, by relying 
 1. Clone this repository. One member of the team is responsible of Item class, while the other of the Inventory class.
 2. Design and develop other unit tests which can be important for the two classes (you can rely on what defined in the blackbox testing exercise of previous exercise lesson). Each member works on his own and commit and push to share changes.
 3. Run the tests and correct the classes or the tests until all are passed.
-4. The member responsible of the Inventory class add a method to search by description and define and runs proper tests, while the other member add the field supplier and methods necessary to manage it in the Item class and define and runs proper tests. 
+4. The member responsible of the Inventory class add a method to search by description and define and runs proper tests, while the other member add the field supplier and methods necessary to manage it in the Item class and define and runs proper tests.
+ 
+
 ##Additional Material
 - [Git guide](http://git-scm.com/doc)
 - [Git for windows guide](https://windows.github.com/help.html)

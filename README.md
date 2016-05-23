@@ -91,8 +91,8 @@ You are a team of 2 developers working on same projects but leaving in different
 6. Look at each other’s git log output. Notice how the SHA-1 is the same for a given commit across every copy of the repository. Why is this important?
 7. Two members of the group should now make a commit locally, and race to push it. To keep things simple, be sure to edit different files. What happens to the runner-up?
 8. The runner-up should now pull. As a group, look at the output of the command. Additionally, look at the 
-git log, and notice that there is a merge commit. You may also wish to view the DAG in gitk.
-9. Repeat the last two steps acouple of times, to practice. 
+git log, and notice that there is a merge commit. You may also wish to view the DAG in git.
+9. Repeat the last two steps a couple of times, to practice. 
 
 ###Stretch Task
 1. Now create a situation where two group members both edit the same line in the same file and commit it locally. Race to push.

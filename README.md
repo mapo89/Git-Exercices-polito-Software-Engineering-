@@ -1,17 +1,17 @@
 # Git-Exercices-polito-Software-Engineering-
 Tutorial for using git for Software Engineering course of Politecnico di Torino.
-##Preliminary operations
+## Preliminary operations
 1. Create your account on github
 2. Install a git client ([windows](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Windows), [linux](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Linux), [Mac](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git#Installing-on-Mac))
 2. Set up git as explained [here](https://help.github.com/articles/set-up-git/)
 3. Create a new repository as explained [here](https://help.github.com/articles/create-a-repo/)
 
-##Exercise 1
+## Exercise 1
 
-###Scenario
+### Scenario
 You are writing your master thesis and you don't want to keep the history of what done, in order to be able to track modifications and rollback if necessary.
 
-###Main Task
+### Main Task
 1. Create a new directory and change into it.
 2. Use the **init** comm and to create a Git repository in that directory.
 3. Observe that there is now a **.git** directory.
@@ -27,7 +27,7 @@ You are writing your master thesis and you don't want to keep the history of wha
 14. Use the show command to look at an individual commit. How many characters of the commit identifier can you get away with typing at a minimum?
 15. Make a couple more commits, at least one of which should add an extra file.
 
-###Stretch Task
+### Stretch Task
 1. Use the Git **rm** command to remove a file. Look at the status afterwards. Now commit the deletion.
 2. Delete another file, but this time do not use Git to do it; e.g. if you are on Linux, just use the 
 normal (non - Git) **rm** command; on Windows use **del**.
@@ -41,13 +41,13 @@ rename?
 8. Imagine you want to see a diff that summarizes all that happened between two commit identifiers. Use the 
 **diff** command, specifying two commit identifiers joined by two dots (that is, something like abc123..def456). Check the output is what you expect.
 
-##Exercise 2
+## Exercise 2
 Work in the same repository of previous exercise.
 
-###Scenario
+### Scenario
 As for exercise 1.
 
-###Main Task
+### Main Task
 1. Run the **status** command. Notice how it tells you what branch you are in.
 2. Use the **branch** command to create a new branch.
 3. Use the **checkout** command to switch to it.
@@ -61,7 +61,7 @@ As for exercise 1.
 11. Now merge your branch again. (Aside: you don’t need to do anything to inform Git that you only want to merge things added since your previous merge. Due to the way Git works, that kind of issue simply does not come up, unlike in early versions of Subversion).
 12. Look at git log. Notice that there is a merge commit. Also look in gitk. Notice the DAG now shows how things forked, and then were joined up again by a merge commit.
 
-###Stretch Task
+### Stretch Task
 1. Once again, checkout your branch. Make a couple of commits.
 2. Return to your master branch. Make a commit there that changes the exact same line, or lines, as commits in your branch did.
 3. Now try to merge your branch. You should get a conflict.
@@ -75,14 +75,14 @@ As for exercise 1.
   - Look at the help page for merge, and find out how you specify a custom message for the merge commit if it is automatically generated.
   - Look at the help page for merge, and find out how to prevent Git from automatically committing the merge commit it generates, but instead give you chance to inspect it and merge it yourself.
 
-##Exercise 3
+## Exercise 3
 
 Form group of 2 people.
 
-###Scenario
+### Scenario
 You are a team of 2 developers working on same projects but leaving in different cities (Torino and Milano).
 
-###Main Task
+### Main Task
 1. First, one person in the group should create a public repository using their GitHub account.
 2. This same person should then follow the instructions from GitHub to add a remote. Copy the inventory folder of this project and push the repository. Do not forget the –u flag, as suggested by GitHub!
 3. All of the other members of the group should then be added as collaborators, so they can commit to the repository also.
@@ -94,27 +94,27 @@ You are a team of 2 developers working on same projects but leaving in different
 git log, and notice that there is a merge commit. You may also wish to view the DAG in git.
 9. Repeat the last two steps a couple of times, to practice. 
 
-###Stretch Task
+### Stretch Task
 1. Now create a situation where two group members both edit the same line in the same file and commit it locally. Race to push.
 2. When the runner-up does a pull, they should get a merge conflict.
 3. Look as a group at the file in conflict, and resolve it.
 4. Use the add command to stage the fix, and then use commit to make the merge commit. Notice how this procedure is exactly the one you got used to when resolving conflicts in branches.
 
-##Exercise 4
+## Exercise 4
 
 Work in the same group of exercise 3.
 
-###Scenario
+### Scenario
 As exercise 3. In particular you have to focus on the testing phase, by relying on junit.
 
-###Main Task
+### Main Task
 1. Clone this repository. One member of the team is responsible of Item class, while the other of the Inventory class.
 2. Design and develop other unit tests which can be important for the two classes (you can rely on what defined in the blackbox testing exercise of previous exercise lesson). Each member works on his own and commit and push to share changes.
 3. Run the tests and correct the classes or the tests until all are passed.
 4. The member responsible of the Inventory class add a method to search by description and define and runs proper tests, while the other member add the field supplier and methods necessary to manage it in the Item class and define and runs proper tests.
  
 
-##Additional Material
+## Additional Material
 - [Git guide](http://git-scm.com/doc)
 - [Git for windows guide](https://windows.github.com/help.html)
 - [Gui clients for Git](http://git-scm.com/downloads/guis)
